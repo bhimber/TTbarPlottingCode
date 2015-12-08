@@ -1,0 +1,17 @@
+{
+    "datasetsfile" : "./datafiles/datafiles.txt",
+    "tree_name" : "mini",
+    "friend_tree_names" : [],
+    "cutflow" : "mini_cutflow_mumu",
+    "weight" : "mcWeight*scaleFactor_ALLBTAG",
+    "cuts" : {
+        "ttbardilep" : "flag_DL == 1048575",
+        "mumu" : "channel_DL == 2",
+
+        "ttbarmumu" : ["ttbardilep", "mumu"]
+    },
+
+    "runs" : [
+        ["./output/ttbarmumu.root", "ttbarmumu"]
+    ]
+}

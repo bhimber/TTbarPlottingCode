@@ -1,0 +1,22 @@
+{
+    "data_file" : "ttbarelmu.root",
+    "eff_file" : "eff.26thMay.root",
+    "out_file" : "ttbardilepxsecs.root",
+
+    "lumi" : 20300,
+
+    "xsec_runs" : {
+        "mll" : {
+            "data_stack" : "data_mll",
+            "sm_stack" : "bkg_mll",
+            "eff_hist" : "h_eff_mll"
+        },
+
+        "lep0_pt" : {
+            "data_stack" : "data_lep0_pt",
+            "sm_stack" : "bkg_lep0_pt",
+            "eff_hist" : "h_led_lep_eff_pt"
+        }
+
+    }
+}
